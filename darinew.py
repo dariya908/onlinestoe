@@ -23,10 +23,10 @@ def register(username,password,check_password):
 register('dariya0908','Dariya8998','Dariya8998')
 
 def counter(money,price):
-    if money<price:
+    if money< price:
         return 'no money'
     else:
-        result=money=price
+        result=money-price
         return result
 
 def choise(num_of_fud):
@@ -38,12 +38,12 @@ def choise(num_of_fud):
     return list1
 
 def order():
-    money=1000
-    list1=choise(3)
+    money=1500
+    list1 = choise(3)
     for food in list1:
-        price=catalogue[food]
+        price = catalogue[food]
         if money >= price:
-            money=counter(money,price)
+            money = counter(money,price)
     print(money)
 order()
 
