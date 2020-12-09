@@ -3,24 +3,24 @@ catalogue = {'hot-dot': 50, 'hamburger': 120, 'shaurma': 150, 'naggets': 130, 'p
                          'garnir': 100, 'grechka': 70, 'pelmeni': 130, 'french meat': 400, 'fish': 500,
                          't-bone': 870, 'Beijing duck': 5000, 'shashlyk assorti': 50000
                          }
-#
-# username='dariya0908'
-# password='Dariya8998'
-# money=1000
-#
-# def register(username,password,check_password):
-#     if 8 < len(username) < 40:
-#         if password.istitle() and not password.isdigit() and not password.isalpha():
-#             if password == check_password:
-#                 print('registasia')
-#             else:
-#                 print('paroli ne sovpadaut')
-#         else:
-#             print('ne pravilnye znahenia')
-#     else:
-#         print('kol-vo simvolov ne sovpadaut')
-#
-# register('dariya0908','Dariya8998','Dariya8998')
+
+username='dariya0908'
+password='Dariya8998'
+money=1000
+
+def register(username,password,check_password):
+    if 8 < len(username) < 40:
+        if password.istitle() and not password.isdigit() and not password.isalpha():
+            if password == check_password:
+                print('registasia')
+            else:
+                print('paroli ne sovpadaut')
+        else:
+            print('ne pravilnye znahenia')
+    else:
+        print('kol-vo simvolov ne sovpadaut')
+
+register('dariya0908','Dariya8998','Dariya8998')
 
 def counter(money,price):
     if money<price:
